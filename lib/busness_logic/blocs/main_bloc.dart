@@ -5,7 +5,6 @@ enum CounterEvent { increment, decrement }
 class CounterBloc extends Bloc<CounterEvent, int> {
   CounterBloc() : super(0);
 
-  @override
   Stream<int> mapEventToState(CounterEvent event) async* {
     switch (event) {
       case CounterEvent.increment:
@@ -19,6 +18,5 @@ class CounterBloc extends Bloc<CounterEvent, int> {
 }
 
 Future<void> main(List<String> args) async {
-  final bloc = CounterBloc();
   // final streamSubscription = bloc.listen(print);
 }
