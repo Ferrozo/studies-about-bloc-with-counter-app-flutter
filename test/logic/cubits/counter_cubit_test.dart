@@ -1,6 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:studies_about_bloc_matser_class/busness_logic/cubits/counter_cubit.dart';
+import 'package:studies_about_bloc_matser_class/logic/cubits/counter_cubit.dart';
 
 void main() {
   group('Passed:', () {
